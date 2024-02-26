@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  header{
+    background-color: #14274E;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 10px 0 ;
+    z-index: 10000;
+  
+  }
+  nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  /* nav ul li{} */
+  nav li{
+    height: 50px;
+  }
+  nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  nav li:first-child{
+    margin-right: auto;
+    /* margin-right: 54rem; */
+  }
+  /* .ul-nav li a{
+   margin-bottom: 100px;
+  } */
+  .sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sidebar li{
+    width: 100%;
+    /* position: relative; */
+  }
+  .sidebar a{
+    width: 100%;
+    font-family: "Fredoka" , sans-serif;
+    font-size: medium;
+
+  }
+  .sidebar li a svg{
+    scale: 50%;
+    transform: translatey(10px);
+    transform: translatex(-80px);
+  }
+  .menu-button{
+    display: none;
+  }
+  .img-navbar div div img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+
+  .ul-nav li a{
+    color: white;
+    font-family: "Fredoka" , sans-serif;
+    font-size: large;
+  }
+  .ul-nav li {
+    color: white;
+    margin-right: 15px;
+    position: relative;
+
+  }
+  .button-login a{
+    background-color: rgb(35, 89, 206);
+    border-radius: 10%;
+  }
+
+  /* Dropdown Menu Navbars */
+  .dropdown_menu{
+    display: none;
+    animation-duration: 0.2s;
+ 
+  }
+  .ul-nav li .dropdown_menu{
+    animation-name: dropdown;
+    animation-timing-function: ease-in;
+  }
+  .ul-nav li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #394867;
+  }
+  .ul-nav li:hover .dropdown_menu ul{
+  display: block;
+  margin: 10px;
+}
+.ul-nav li:hover .dropdown_menu ul li{
+  width: 150px;
+  padding: 10px;
+}
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+.li-dropdown{
+  padding: 10px;
+}
+/* .dropdown_menu_mobile{
+  display: none;
+} */
+/* .menu-item-has-children{
+  display: block;
+  position: relative;
+} */
+
+.dropdown-mobile{
+  display: block;
+}
+.menu-item-has-children .dropdown-mobile ul{
+  display: flex;
+  flex-direction: column;
+}
+
+  @media(max-width: 800px){
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
+    .menu-button a svg{
+      display: block;
+        scale: 60%;
+    }
+    
+  }
+  @media(max-width: 1300px){
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
+    .menu-button a svg{
+      display: block;
+        scale: 60%;
+    }
+    
+  }
+  @media(max-width: 400px){
+    .sidebar{
+      width: 100%;
+    }
+    /* nav li:first-child{
+        margin-right: 54rem;
+      } */
+  }
+    
+  @keyframes dropdown{
+    0%   { transform: translateY(-5px); 
+    opacity: 30%;}
+    100%   { transform: translateY(0); }
+  }
