@@ -39,7 +39,22 @@
       <nav class="sticky-navBar">
         <ul class="sidebar">
           <li class="btn-x" onclick=hideSidebar()><a href="#"><svg fill="#f2f2f2" width="64px" height="64px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" stroke="#f2f2f2"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M7.004 23.087l7.08-7.081-7.07-7.071L8.929 7.02l7.067 7.069L23.084 7l1.912 1.913-7.089 7.093 7.075 7.077-1.912 1.913-7.074-7.073L8.917 25z"></path></g></svg></svg></a></li>
-          <li><a href="#">Beranda</a></li>
+          <li class="menu-item-has-children">
+            <a href="#">Beranda<i class="fas fa-caret-down"></i></a>
+            <div class="dropdown_menu_mobile">
+              <ul>
+                <li>
+                  <a href="">Berita</a>
+                </li>
+                <li>
+                  <a href="">Galeri</a>
+                </li>
+                <li>
+                  <a href="">Video</a>
+                </li>
+              </ul>
+            </div>  
+          </li>
           <li><a href="#">Profile</a></li>
           <li><a href="#">Data</a></li>
           <li><a href="#">Informasi</a></li>
@@ -367,7 +382,7 @@
       <!-- gelombang -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#800080"
+          fill="#5F8670"
           fill-opacity="1"
           d="M0,256L48,240C96,224,192,192,288,192C384,192,480,224,576,240C672,256,768,256,864,224C960,192,1056,128,1152,112C1248,96,1344,128,1392,144L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
@@ -453,7 +468,7 @@
       <!-- gelombang -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#800080"
+          fill="#5F8670"
           fill-opacity="1"
           d="M0,256L24,261.3C48,267,96,277,144,256C192,235,240,181,288,133.3C336,85,384,43,432,53.3C480,64,528,128,576,149.3C624,171,672,149,720,138.7C768,128,816,128,864,122.7C912,117,960,107,1008,85.3C1056,64,1104,32,1152,42.7C1200,53,1248,107,1296,117.3C1344,128,1392,96,1416,80L1440,64L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"
         ></path>
@@ -560,7 +575,7 @@
       <!-- gelombang -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#800080"
+          fill="#5F8670"
           fill-opacity="1"
           d="M0,32L40,58.7C80,85,160,139,240,149.3C320,160,400,128,480,112C560,96,640,96,720,90.7C800,85,880,75,960,69.3C1040,64,1120,64,1200,101.3C1280,139,1360,213,1400,250.7L1440,288L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
         ></path>
@@ -592,7 +607,7 @@
                         xmlns="http://www.w3.org/2000/svg"
                         class="icon"
                         viewBox="0 0 20 20"
-                        fill="currentColor"
+                        fill="#FF9800"
                       >
                         <path
                           fill-rule="evenodd"
@@ -626,7 +641,7 @@
                         xmlns="http://www.w3.org/2000/svg"
                         class="icon"
                         viewBox="0 0 20 20"
-                        fill="currentColor"
+                        fill="#FF9800"
                       >
                         <path
                           fill-rule="evenodd"
@@ -660,7 +675,7 @@
                         xmlns="http://www.w3.org/2000/svg"
                         class="icon"
                         viewBox="0 0 20 20"
-                        fill="currentColor"
+                        fill="#FF9800"
                       >
                         <path
                           fill-rule="evenodd"
@@ -694,7 +709,7 @@
                         xmlns="http://www.w3.org/2000/svg"
                         class="icon"
                         viewBox="0 0 20 20"
-                        fill="currentColor"
+                        fill="#FF9800"
                       >
                         <path
                           fill-rule="evenodd"

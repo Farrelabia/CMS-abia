@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 body {
   min-height: 100vh;
@@ -10,7 +15,7 @@ body {
   font-family: "Fredoka", sans-serif;
 }
 header {
-  background-color: #800080;
+  background-color: #5F8670;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   position: -webkit-sticky;
   position: sticky;
@@ -50,6 +55,9 @@ nav a {
     align-items: center;
     color: black;
 }
+
+
+
 nav li:first-child {
   margin-right: auto;
     /* scale: 100%;
@@ -94,7 +102,7 @@ nav li:first-child {
 .ul-nav .hideOnMobile:hover {
    /* border: 1px solid red; */
    scale: 105%;
-   background-color: #800080;
+   background-color: #5F8670;
    transform: rotatex(10deg);
    box-shadow: 0px 5px 2px -1px rgba(255,255,255,0.59);
    -webkit-box-shadow: 0px 5px 2px -1px rgba(255,255,255,0.59);
@@ -123,7 +131,7 @@ nav li:first-child {
   position: relative;
 }
 .button-login a {
-  background-color: #3e013e;
+  background-color: #FF9800;
   border-radius: 10%;
 }
 
@@ -144,7 +152,7 @@ nav li:first-child {
   position: fixed;
   left: 0;
   top: 100%;
-  background-color: #920f92;
+  background-color: #5F8670;
 }
 .ul-nav li:hover .dropdown_menu ul {
   display: block;
@@ -164,7 +172,7 @@ nav li:first-child {
 }
 .dropdown_menu-1{
   display: none;
-  height: 25rem;
+  height: auto;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -173,7 +181,7 @@ nav li:first-child {
   position: absolute;
   top: 0;
   right: 130px;
-  background-color:  #800080;
+  background-color:  #5F8670;
 }
 /* .dropdown_menu_mobile{
   display: none;
@@ -196,7 +204,7 @@ nav li:first-child {
   position: absolute;
   float: right;
   width: 18rem;
-  background-color: #394867;
+  background-color: #5F8670;
 }
 .menu-item-has-children{
   position: relative;
@@ -231,7 +239,7 @@ nav li:first-child {
 }
 
 .item-visi:hover {
-  background: #800080;
+  background: #5F8670;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -254,7 +262,7 @@ nav li:first-child {
 .item-visi .icon {
   font-size: 40px;
   margin-bottom: 25px;
-  color: salmon;
+  color: #5F8670;
   width: 90px;
   height: 90px;
   line-height: 96px;
@@ -269,7 +277,7 @@ nav li:first-child {
   border-style: none;
   box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
   box-sizing: border-box;
-  color: #3c4043;
+  color: #5F8670;
   cursor: pointer;
   display: inline-flex;
   fill: currentcolor;
@@ -297,7 +305,7 @@ nav li:first-child {
 
 .button-selengkapnya:hover {
   background: #F6F9FE;
-  color: #3e013e;
+  color: #5F8670;
 }
 
 .button-selengkapnya:active {
@@ -307,7 +315,7 @@ nav li:first-child {
 
 .button-selengkapnya:focus {
   outline: none;
-  border: 2px solid #3e013e;
+  border: 2px solid #5F8670;
 }
 
 .button-selengkapnya:not(:disabled) {
@@ -345,7 +353,7 @@ nav li:first-child {
 }
 
 .berita-page {
-  background-color: #800080;
+  background-color: #5F8670;
   padding-bottom: 3rem;
 }
 
@@ -418,15 +426,15 @@ nav li:first-child {
 
 .content .detail h2 span {
   font-size: 0.7em;
-  color: #03a9f4;
+  color: #5F8670;
   font-weight: bold;
 }
 
 button.slick-next.slick-arrow::before{
-  background-color: #c703c7;
+  background-color: #FF9800;
 }
 button.slick-prev.slick-arrow::before{
-  background-color: #c703c7;
+  background-color: #FF9800;
   transform: translateX(-20px);
 }
 .slick-slider .slick-prev:before, .slick-slider .slick-next:before{
@@ -448,7 +456,7 @@ button.slick-prev.slick-arrow::before{
 
 /* Galeri */
 .galeri-page {
-  background-color: #800080;
+  background-color: #5F8670;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -477,7 +485,7 @@ button.slick-prev.slick-arrow::before{
   .slider-for div img{
     border-radius: 8px;
     width: 95%;
-    border: 5px solid #c703c7;
+    border: 5px solid #FF9800;
     height: 45rem;
     object-fit: cover;
   }
@@ -488,7 +496,7 @@ button.slick-prev.slick-arrow::before{
   .slider-nav div img{
     width: 25rem;
     height: 15rem;
-    border: 4px solid #c703c7;
+    border: 4px solid #FF9800;
     object-fit: cover;
   }
 
@@ -516,13 +524,14 @@ button.slick-prev.slick-arrow::before{
   }
   
   /* basic article elements styling */
-  article h2 {
+  article h2 , .card-body a>h5 {
     margin: 0 0 18px 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.9rem;
     letter-spacing: 0.06em;
-    color: var(--title-color);
+    color: #5F8670;
     transition: color 0.3s ease-out;
+
   }
   
   figure {
@@ -573,14 +582,31 @@ button.slick-prev.slick-arrow::before{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   }
 
+
+  
+
+  /* PRESTASI-SEKOLAH */
   .all-main-content-card {
     gap: 5rem;
+  }
+
+  .main-content-card {
+    border-radius: 50px;
+    box-shadow: 1px -1px 21px 3px rgba(0,0,0,0.18);
+-webkit-box-shadow: 1px -1px 21px 3px rgba(0,0,0,0.18);
+-moz-box-shadow: 1px -1px 21px 3px rgba(0,0,0,0.18);
+  }
+
+  .main-content-card:hover {
+    box-shadow: 1px -1px 21px 3px rgba(0,0,0,0.28);
+-webkit-box-shadow: 1px -1px 21px 3px rgba(0,0,0,0.28);
+-moz-box-shadow: 1px -1px 21px 3px rgba(0,0,0,0.28);
   }
 
   .keterangan-card {
     display: flex;
     flex-direction: column;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 200;
   }
 
@@ -599,31 +625,6 @@ button.slick-prev.slick-arrow::before{
     align-items: center;
   }
 
-
-
-  /* footer */
-  .all-informasi {
-    display: flex;
-    justify-content: center;
-    background-color: #800080;
-    color: #fff;
-    text-align: center;
-    
-  }
-  .all-informasi span p {
-    font-weight: 500;
-  }
-
-  .footer-alamat{
-
-  }
-
-
-
-
-
-
-  /* TENTANG-SEKOLAH */
   .img-page-header .gambar-header{
     width: 100%;
     height: 220px;
@@ -638,19 +639,115 @@ button.slick-prev.slick-arrow::before{
   .img-page-header p{
     font-size: 40px;
     font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Dosis", sans-serif;
     position: relative;
     text-align: center;
     bottom: 140px;
     color: #fff;
-    font-weight: 500;
+    font-weight: 700;
     filter: blur(0);
+    font-style: normal;
   }
 
-/* 
+  .btn-selengkapnya {
+    
+  }
+
+  /* Side Content */
+.side-content .title-side{
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+}
+.side-content .title-side span{
+  color: #5F8670;
+}
+.side-content .side-element .img-side{
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.side-content .side-element .img-side img{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+
+}
+.side-content .side-element .body-side h4 a{
+  text-decoration: none;
+  color: black;
+}
+.side-content .side-element .body-side h4 a:hover{
+  color: #5F8670;
+}
+.side-content .side-element .body-side h4{
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: larger;
+}
+.side-content .side-element .body-side p{
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.528);
+}
+
+
+/* TENTANG-SEKOLAH */
+.title-tentang-sekolah, .title-lokasi-sekolah , .title-visi-misi , .title-kepsek {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* VISI DAN MISI */
+
+
+
+/* Kepala Sekolah */
+.sambutan-kepsek h5 {
+  color: #808080;
+  padding-bottom: 1rem;
+}
+
+
+/* pagination */
+.page-link {
+  color: #28666e;
+}
+
+/* footer */
+  .all-informasi {
+    display: flex;
+    justify-content: center;
+    background-color: #5F8670;
+    color: #fff;
+    text-align: center;
+    
+  }
+  .all-informasi span p {
+    font-weight: 500;
+  }
+
+  .footer-alamat{
+    
+  }
+  
+  
+  
+  
+
+
+  
+  /* 
 .carousel-caption{
-width: 30%;
-display: inline-block;
+  width: 30%;
+  display: inline-block;
 /* margin-bottom: 5rem; */
 /* transform: translateY(-12rem); */
 /* transform: translateX(10px); */
@@ -670,9 +767,10 @@ display: inline-block;
     display: block;
     font-size: 16px;
   }
+
   .menu-button a svg {
     display: block;
-    scale: 75%;
+    scale: 50%;
   }
   .sidebar {
     width: 50%;
@@ -693,13 +791,42 @@ display: inline-block;
     display: none;
     overflow: hidden;
   }
+
+  .all-main-content-card {
+    padding-bottom: 3rem;
+  }
 }
 
 @media (max-width: 768px) {
+  nav a {
+    height: 100%;
+      padding: 0 10px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      color: black;
+  }
+  .nama-sekolah {
+    font-size: 16px;
+  }
+  #marqueeText {
+    font-size: 14px;
+  }
+  .menu-button {
+    display: block;
+    font-size: 8px;
+  }
   .all-informasi {
     display: flex;
     flex-direction: column;
   }
+  .desc-visi-misi h5 {
+    font-size: 14px;
+  }
+  .sambutan-kepsek h5 {
+  font-size: 14px;
+}
+
 }
 /* @media (max-width: 1300px) {
   .hideOnMobile {
