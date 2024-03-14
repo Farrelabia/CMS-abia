@@ -37,6 +37,19 @@ function hideSidebar() {
   sidebar.style.display = "none";
 }
 
+window.addEventListener('resize', function() {
+  var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  var burgerButton = document.querySelector('.btn-x');
+  var sidebar = document.querySelector('.sidebar');
+  if (width > 768) {
+    sidebar.style.display = 'none';
+    burgerButton.style.display = 'none';
+  } else {
+    burgerButton.style.display = 'block';
+    sidebar.style.display = 'block';
+  }
+});
+
 // Guru
 $(".slider-guru").slick({
   slidesToShow: 3,
@@ -89,3 +102,5 @@ $('.slider-nav').slick({
   centerMode: true,
   focusOnSelect: true
 });
+
+
